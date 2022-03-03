@@ -40,4 +40,26 @@ let doMath = (val1,val2)=>{
 
 console.log(doMath( 10, 2 ));
 
-//Spread Syntax
+//3.Spread Syntax
+
+let arr= ['Paul', 'Birmingham','Kimchi'];
+
+function myFunc (name, location ,  favFood){
+    console.log(`${name}, ${location}, ${favFood}`)
+}
+
+myFunc();
+myFunc(...arr);
+
+let myName = 'Eunjin Jeong';
+
+function myFunc2(value){
+    let newVariable = [...value];
+    for (let i= 0 ; i<newVariable.length ;i++){
+    console.log(newVariable[i])
+    }
+
+};
+
+myFunc2(myName);
+
